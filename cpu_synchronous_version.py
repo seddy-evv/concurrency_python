@@ -1,4 +1,3 @@
-import concurrent.futures
 import time
 
 
@@ -7,8 +6,8 @@ def cpu_bound(number):
 
 
 def find_sums(numbers_atr):
-    with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
-        executor.map(cpu_bound, numbers_atr)
+    for number in numbers_atr:
+        cpu_bound(number)
 
 
 if __name__ == "__main__":
