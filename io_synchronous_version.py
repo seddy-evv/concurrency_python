@@ -1,3 +1,11 @@
+"""
+Code example with I/O-bound problem.
+I/O-bound problems cause your program to slow down because it frequently must wait for
+input/output (I/O) from some external resource. They arise frequently when your program is working
+with things that are much slower than your CPU.
+"""
+
+
 import requests
 import time
 
